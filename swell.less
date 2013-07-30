@@ -1,0 +1,101 @@
+@import "../css/elements.less";
+
+@green: #43A842;
+@white: #FEFEFE;
+@gray: #4A4C48;
+@black: #010101;
+
+.sw-box{
+	position: relative;
+	display: inline-block; 
+	.rounded(5px);
+	z-index: 1;
+	cursor: default;
+}
+
+.sw-lid{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 3;
+}
+
+.sw-flip-wrapper{
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	perspective: 1000;
+	display: inline-block;
+
+	.sw-box{
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		position: relative
+	}
+
+	.sw-lid, .sw-well {
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	.sw-box > .sw-well,
+	.sw-top > .sw-well{
+		-webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+	}
+
+	.sw-left > .sw-well{
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+	.sw-right > .sw-well{
+		-webkit-transform: rotateY(-180deg);
+		-moz-transform: rotateY(-180deg);
+		transform: rotateY(-180deg);
+	}
+
+	.sw-bottom > .sw-well{
+		-webkit-transform: rotateX(180deg);
+		-moz-transform: rotateX(180deg);
+		transform: rotateX(180deg);
+	}
+}
+
+.sw-flip-wrapper:hover .sw-box,
+.sw-flip-wrapper.hover .sw-box,
+.sw-flip-wrapper:hover .sw-box.sw-top,
+.sw-flip-wrapper.hover .sw-box.sw-top{
+	-webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+}
+
+.sw-flip-wrapper:hover .sw-box.sw-left,
+.sw-flip-wrapper.hover .sw-box.sw-left{
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.sw-flip-wrapper:hover .sw-box.sw-right,
+.sw-flip-wrapper.hover .sw-box.sw-right{
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+.sw-flip-wrapper:hover .sw-box.sw-bottom,
+.sw-flip-wrapper.hover .sw-box.sw-bottom{
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+
