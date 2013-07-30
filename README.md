@@ -3,6 +3,9 @@ swell-js
 
 Swell JS is a JQuery plugin that easily reveals hidden content wells
 
+(Demo)[http://cdpn.io/Fxkdb]
+----------------------------
+
 Documentation
 -------------
 
@@ -13,7 +16,7 @@ Documentation
 
 ### You need to include the following after Jquery has been included.
 <pre>
-   	<script src="swell-js/swell.js"></script>
+   	&lt;script src="swell-js/swell.js"&gt;&lt;/script&gt;
 </pre>
 
 Below is the basic syntax for a Swell. The lid will cover the content until the Swell is hovered over to reveal the content.
