@@ -3,8 +3,10 @@ swell-js
 
 Swell JS is a JQuery plugin that easily reveals hidden content wells
 
-(Demo)[http://cdpn.io/Fxkdb]
+Demo
 ----------------------------
+
+(Demo)[http://cdpn.io/Fxkdb]
 
 Documentation
 -------------
