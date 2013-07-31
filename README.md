@@ -13,12 +13,12 @@ Documentation
 
 ### You need to include the following css.
 <pre>
-    &lt;link rel="stylesheet" href="swell-js/swell.css"&gt;
+    &lt;link rel="stylesheet" href="swell.css"&gt;
 </pre>
 
 ### You need to include the following after Jquery has been included.
 <pre>
-   	&lt;script src="swell-js/swell.js"&gt;&lt;/script&gt;
+   	&lt;script src="swell.js"&gt;&lt;/script&gt;
 </pre>
 
 Below is the basic syntax for a Swell. The lid will cover the content until the Swell is hovered over to reveal the content.
