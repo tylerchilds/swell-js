@@ -214,5 +214,5 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-#ignore my less file
-swell.less
+#ignore my less files
+*.less
